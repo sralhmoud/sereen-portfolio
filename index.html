@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sereen Alhmoud | Data Science &amp; AI Portfolio</title>
+<meta name="description" content="Personal portfolio of Sereen Alhmoud IT student specializing in Data Science & Artificial Intelligence. About, skills, education, and projects.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+
+<!-- Styles -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Animated background -->
+<div class="bg-grid" aria-hidden="true"></div>
+<canvas id="particles" aria-hidden="true"></canvas>
+
+<!-- ===== Header / Nav ===== -->
+<header class="site-header" id="site-header">
+  <nav class="navbar container">
+    <a href="#hero" class="logo">
+      <span class="logo-bracket">&lt;</span>Sereen<span class="logo-dot">.</span>AI<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <!--<li><a href="#education" class="nav-link">Education</a></li>-->
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+        <i class="fa-solid fa-sun icon-sun"></i>
+        <i class="fa-solid fa-moon icon-moon"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-text" data-reveal>
+        <p class="hero-greeting">
+          <span class="terminal-prompt">&gt;</span> Hi, I'm
+        </p>
+        <h1 class="hero-name">Sereen Alhmoud</h1>
+        <h2 class="hero-role">
+          <span class="typed-text" id="typed-text"></span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          An Information Technology student specializing in <strong>Data Science &amp; Artificial Intelligence</strong>.
+          I turn complex problems into practical, measurable solutions through analytical thinking and
+          collaborative teamwork, and I'm always looking to grow in data-driven, innovation-focused environments.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fa-solid fa-diagram-project"></i> View My Projects
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fa-solid fa-paper-plane"></i> Get In Touch
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://www.linkedin.com/in/sereen-alhmoud" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-btn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub" class="social-btn">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="mailto:sralhmoud@gmail.com" aria-label="Email" class="social-btn">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="tel:+966593720908" aria-label="Phone" class="social-btn">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <div class="tech-panel glass">
+          <div class="panel-topbar">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+            <span class="panel-filename">model_training.py</span>
+          </div>
+          <div class="panel-body">
+            <pre class="code-snippet"><code><span class="c-kw">import</span> pandas <span class="c-kw">as</span> pd
+<span class="c-kw">import</span> numpy <span class="c-kw">as</span> np
+<span class="c-kw">from</span> sklearn <span class="c-kw">import</span> model
+
+df = pd.<span class="c-fn">read_csv</span>(<span class="c-str">"dataset.csv"</span>)
+X_train, y_train = <span class="c-fn">split</span>(df)
+
+model.<span class="c-fn">fit</span>(X_train, y_train)
+<span class="c-cm"># Accuracy: 96.4%</span></code></pre>
+
+            <div class="mini-dashboard">
+              <div class="bar-chart" aria-hidden="true">
+                <span style="--h:35%"></span>
+                <span style="--h:60%"></span>
+                <span style="--h:48%"></span>
+                <span style="--h:82%"></span>
+                <span style="--h:58%"></span>
+                <span style="--h:95%"></span>
+              </div>
+
+              <div class="neuro-net" aria-hidden="true">
+                <svg class="net-lines" viewBox="0 0 120 80">
+                  <line x1="10" y1="15" x2="60" y2="10"></line>
+                  <line x1="10" y1="40" x2="60" y2="10"></line>
+                  <line x1="10" y1="65" x2="60" y2="10"></line>
+                  <line x1="10" y1="15" x2="60" y2="40"></line>
+                  <line x1="10" y1="40" x2="60" y2="40"></line>
+                  <line x1="10" y1="65" x2="60" y2="40"></line>
+                  <line x1="10" y1="15" x2="60" y2="70"></line>
+                  <line x1="10" y1="40" x2="60" y2="70"></line>
+                  <line x1="10" y1="65" x2="60" y2="70"></line>
+                  <line x1="60" y1="10" x2="110" y2="40"></line>
+                  <line x1="60" y1="40" x2="110" y2="40"></line>
+                  <line x1="60" y1="70" x2="110" y2="40"></line>
+                </svg>
+                <span class="node" style="left:8%;top:19%;"></span>
+                <span class="node" style="left:8%;top:50%;animation-delay:.3s;"></span>
+                <span class="node" style="left:8%;top:81%;animation-delay:.6s;"></span>
+                <span class="node" style="left:50%;top:12%;animation-delay:.15s;"></span>
+                <span class="node" style="left:50%;top:50%;animation-delay:.45s;"></span>
+                <span class="node" style="left:50%;top:87%;animation-delay:.75s;"></span>
+                <span class="node node-output" style="left:92%;top:50%;animation-delay:.9s;"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="floating-chip chip-1"><i class="fa-brands fa-python"></i> Python</div>
+        <div class="floating-chip chip-2"><i class="fa-solid fa-database"></i> SQL</div>
+        <div class="floating-chip chip-3"><i class="fa-solid fa-robot"></i> AI</div>
+        <div class="floating-chip chip-4"><i class="fa-solid fa-chart-line"></i> Data</div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <p class="section-tag" data-reveal><span class="tag-line"></span>About Me</p>
+      <h2 class="section-title" data-reveal>Who Am I?</h2>
+
+      <div class="about-grid">
+        <div class="about-card glass" data-reveal>
+          <p class="about-text">
+            I'm an Information Technology student on the <strong>Data Science &amp; Artificial Intelligence</strong> track
+            at King Saud University, with a strong foundation in data analysis, automation, and applied AI
+            built through hands-on academic and professional projects. I excel at translating complex problems
+            into practical, measurable solutions through analytical thinking and effective teamwork. I'm always
+            looking to grow within data-driven, technology-focused environments that value innovation, continuous
+            learning, and real impact.
+          </p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card glass" data-reveal>
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h3>Excellent</h3>
+            <p>Academic Performance</p>
+          </div>
+          <div class="stat-card glass" data-reveal>
+            <i class="fa-solid fa-code"></i>
+            <h3>IT</h3>
+            <p>Information Technology</p>
+          </div>
+          <div class="stat-card glass" data-reveal>
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Data &amp; AI</h3>
+            <p>Data Science &amp; Artificial Intelligence</p>
+          </div>
+          <div class="stat-card glass" data-reveal>
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>KSA</h3>
+            <p>Riyadh, Saudi Arabia</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <p class="section-tag" data-reveal><span class="tag-line"></span>Skills</p>
+      <h2 class="section-title" data-reveal>Tools &amp; Technical Expertise</h2>
+      <p class="section-sub" data-reveal>A blend of technical and personal skills I use to build data-driven solutions.</p>
+
+      <div class="skills-grid">
+
+        <div class="skill-category glass" data-reveal>
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-database"></i>
+            <h3>Data Science &amp; AI</h3>
+          </div>
+          <ul class="skill-tags">
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Scikit-learn</li>
+            <li>Machine Learning</li>
+            <li>Data Analysis</li>
+            <li>Data Visualization</li>
+          </ul>
+        </div>
+
+        <div class="skill-category glass" data-reveal>
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-code"></i>
+            <h3>Programming &amp; Development</h3>
+          </div>
+          <ul class="skill-tags">
+            <li>Python</li>
+            <li>SQL</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Git &amp; GitHub</li>
+          </ul>
+        </div>
+
+        <div class="skill-category glass" data-reveal>
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-toolbox"></i>
+            <h3>Tools &amp; Technologies</h3>
+          </div>
+          <ul class="skill-tags">
+            <li>Jupyter Notebook</li>
+            <li>Excel</li>
+            <li>Power BI</li>
+            <li>Automation Tools</li>
+            <li>Microsoft Office</li>
+          </ul>
+        </div>
+
+        <div class="skill-category glass" data-reveal>
+          <div class="skill-cat-header">
+            <i class="fa-solid fa-people-group"></i>
+            <h3>Soft Skills</h3>
+          </div>
+          <ul class="skill-tags">
+            <li>Analytical Thinking</li>
+            <li>Problem Solving</li>
+            <li>Teamwork</li>
+            <li>Effective Communication</li>
+            <li>Time Management</li>
+            <li>Continuous Learning</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Education Section 
+  <section class="education" id="education">
+    <div class="container">
+      <p class="section-tag" data-reveal><span class="tag-line"></span>Education</p>
+      <h2 class="section-title" data-reveal>Academic Journey</h2>
+
+      <div class="timeline">
+        <div class="timeline-item glass" data-reveal>
+          <div class="timeline-icon"><i class="fa-solid fa-user-graduate"></i></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 — 2026</span>
+            <h3>Bachelor of Information Technology</h3>
+            <p class="timeline-org">King Saud University — Data Science &amp; Artificial Intelligence Track</p>
+            <p class="timeline-loc"><i class="fa-solid fa-location-dot"></i> Riyadh, Saudi Arabia</p>
+            <span class="gpa-badge"><i class="fa-solid fa-medal"></i> Academic Performance: Excellent</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+===== -->
+  <!-- ===== Experience Section ===== -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <p class="section-tag" data-reveal><span class="tag-line"></span>Experience</p>
+      <h2 class="section-title" data-reveal>Professional Experience</h2>
+      <p class="section-sub" data-reveal>Hands-on co-op training applying data, automation, and AI skills in a real telecom operations environment.</p>
+
+      <div class="exp-timeline">
+        <article class="exp-card glass" data-reveal>
+          <div class="exp-card-head">
+            <div class="exp-card-title-group">
+              <span class="exp-icon"><i class="fa-solid fa-briefcase"></i></span>
+              <div>
+                <h3>Co-op Trainee <span class="exp-company">@ STC</span></h3>
+                <p class="exp-dept">Service Operation Center Department Application Operations Efficiency &amp; Capacity Governance</p>
+              </div>
+            </div>
+            <div class="exp-meta">
+              <span><i class="fa-solid fa-calendar"></i> 01/2026 – 06/2026</span>
+              <span><i class="fa-solid fa-location-dot"></i> Riyadh, Saudi Arabia</span>
+            </div>
+          </div>
+
+          <ul class="exp-list">
+            <li>
+              <i class="fa-solid fa-file-excel"></i>
+              <span>Developed a <strong>VBA UserForm</strong> with an auto-populated Excel dashboard, reducing incident logging time per entry by <strong>~80%</strong> while minimizing input errors through standardized dropdowns.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-robot"></i>
+              <span>Designed an <strong>AI-driven email automation framework</strong> to eliminate manual request classification and response drafting, reducing manual effort and accelerating turnaround for SLM requests.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-vr-cardboard"></i>
+              <span>Configured and tested <strong>MetaOps VR</strong> platform components, including backend service integration validated on the VR front-end, and authored user stories supporting its shift to a gamified environment.</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-chart-column"></i>
+              <span>Supported <strong>Power BI</strong> and <strong>MicroStrategy</strong> dashboard development to improve reporting clarity for stakeholders.</span>
+            </li>
+            <li>
+              <i class="fa-brands fa-python"></i>
+              <span>Cleaned and preprocessed <strong>FWA migration data</strong>, then built a <strong>Python pipeline</strong> to reconcile and enrich 160 service records with geolocation and network attributes cutting manual reconciliation time by <strong>84%</strong> and visualized results in an interactive <strong>HTML/JavaScript dashboard</strong> tracking migration readiness KPIs by district/region.</span>
+            </li>
+          </ul>
+
+          <div class="exp-tags">
+            <span class="tag-chip">VBA</span>
+            <span class="tag-chip">Excel Automation</span>
+            <span class="tag-chip">AI Automation</span>
+            <span class="tag-chip">Python</span>
+            <span class="tag-chip">Power BI</span>
+            <span class="tag-chip">MicroStrategy</span>
+            <span class="tag-chip">VR / MetaOps</span>
+            <span class="tag-chip">Data Reconciliation</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <p class="section-tag" data-reveal><span class="tag-line"></span>Projects</p>
+      <h2 class="section-title" data-reveal>My Work</h2>
+
+      <!-- 
+        Developer note: cards are rendered dynamically from js/projects-data.js
+        To add a new project, add a new object to the PROJECTS array in that file.
+        Image slots are intentionally left as placeholders — just drop screenshots
+        into assets/projects/<project-id>/ and update the "images" paths in the data file.
+      -->
+      <div class="projects-grid" id="projects-grid"></div>
+      
+    </div>
+  </section>
+
+  <!-- ===== Project Detail Modal ===== -->
+  <div class="project-modal-overlay" id="project-modal-overlay">
+    <div class="project-modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-scroll" id="modal-scroll"></div>
+    </div>
+  </div>
+
+  <!-- ===== Certificates Section ===== -->
+<section class="certificates" id="certificates">
+  <div class="container">
+
+    <p class="section-tag" data-reveal>
+      <span class="tag-line"></span>Certificates
+    </p>
+
+    <h2 class="section-title" data-reveal>
+      Certifications &amp; Achievements
+    </h2>
+
+    <p class="section-sub" data-reveal>
+      Certifications and achievements that reflect my continuous learning
+      and interest in Data Science, Artificial Intelligence, and technology.
+    </p>
+
+    <div class="certificates-grid" id="certificates-grid">
+      <!-- Certificates are rendered dynamically -->
+    </div>
+
+  </div>
+</section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <p class="section-tag" data-reveal><span class="tag-line"></span>Contact</p>
+      <h2 class="section-title" data-reveal>Let's Build Something Great Together</h2>
+      <p class="section-sub" data-reveal>Open to internships, project collaboration, and any technical connections.</p>
+
+      <div class="contact-grid">
+        <a href="mailto:sralhmoud@gmail.com" class="contact-card glass" data-reveal>
+          <i class="fa-solid fa-envelope"></i>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">sralhmoud@gmail.com</span>
+        </a>
+        <a href="tel:+966593720908" class="contact-card glass" data-reveal>
+          <i class="fa-solid fa-phone"></i>
+          <span class="contact-label">Phone</span>
+          <span class="contact-value">+966 59 372 0908</span>
+        </a>
+        <a href="https://www.linkedin.com/in/sereen-alhmoud" target="_blank" rel="noopener" class="contact-card glass" data-reveal>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">sereen-alhmoud</span>
+        </a>
+        <div class="contact-card glass" data-reveal>
+          <i class="fa-solid fa-location-dot"></i>
+          <span class="contact-label">Location</span>
+          <span class="contact-value">Riyadh, Saudi Arabia</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Sereen Alhmoud. All rights reserved.</p>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/sereen-alhmoud" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/sralhmoud" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="mailto:sralhmoud@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+<script src="js/projects-data.js"></script>
+<script src="js/projects.js"></script>
+<script src="js/certificates.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
